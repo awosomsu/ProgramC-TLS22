@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+  float harga, diskon,potongan, total, kembalian, uang_yang_dibayarkan;
+  cout << "==========================\n";
+  cout << "Masukkan jumlah harga: ";
+  cin >> harga;
+  cout << "Masukkan diskon (%): ";
+  cin >> diskon;
+  cout << "==========================\n";
+  cout << "Masukkan Pecahan uang: " ;
+  cin  >> uang_yang_dibayarkan ;
+  cout << "==========================\n";
+  potongan = (diskon/100)*harga;
+  total = harga-potongan;
+  kembalian = uang_yang_dibayarkan-total ;
+  cout << "Harga asli: " << harga << endl;
+  cout << "Potongan: " << potongan << endl;
+  cout << "Total yang harus bayar: " << total << endl;
+  cout << "Kembalian" << kembalian << endl;
+
+}
